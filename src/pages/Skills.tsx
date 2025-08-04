@@ -20,11 +20,10 @@ const Skills = () => {
       icon: Settings,
       color: "from-green-500 to-emerald-500",
       skills: [
-        { name: "Node.js", level: 75, description: "Server-side JavaScript runtime" },
-        { name: "Express.js", level: 80, description: "Web application framework" },
-        { name: "RESTful APIs", level: 78, description: "API design & development" },
-        { name: "Authentication", level: 70, description: "JWT & session management" },
-        { name: "Middleware", level: 75, description: "Custom middleware development" },
+        { name: "Node.js", level: 65, description: "Server-side JavaScript runtime" },
+        { name: "Express.js", level: 60, description: "Web application framework" },
+        { name: "RESTful APIs", level: 70, description: "API design & development" },
+        { name: "Authentication", level: 60, description: "JWT & session management" }
       ]
     },
     {
@@ -34,8 +33,7 @@ const Skills = () => {
       skills: [
         { name: "MongoDB", level: 80, description: "NoSQL document database" },
         { name: "Mongoose", level: 78, description: "MongoDB object modeling" },
-        { name: "SQL Basics", level: 65, description: "Relational database concepts" },
-        { name: "Database Design", level: 70, description: "Schema design & optimization" },
+        { name: "SQL Basics", level: 65, description: "Relational database concepts" }
       ]
     },
     {
@@ -46,8 +44,7 @@ const Skills = () => {
         { name: "Git & GitHub", level: 85, description: "Version control & collaboration" },
         { name: "VS Code", level: 90, description: "IDE configuration & extensions" },
         { name: "Postman", level: 80, description: "API testing & documentation" },
-        { name: "NPM/Yarn", level: 82, description: "Package management" },
-        { name: "Chrome DevTools", level: 75, description: "Debugging & performance" },
+        { name: "NPM/Yarn", level: 82, description: "Package management" }
       ]
     },
     {
@@ -55,9 +52,7 @@ const Skills = () => {
       icon: Code,
       color: "from-indigo-500 to-purple-500",
       skills: [
-        { name: "Data Structures", level: 75, description: "Arrays, objects, algorithms" },
-        { name: "Problem Solving", level: 80, description: "Logical thinking & debugging" },
-        { name: "OOP Concepts", level: 70, description: "Object-oriented programming" },
+        { name: "Problem Solving", level: 80, description: "Logical thinking & debugging" }
         { name: "Async Programming", level: 75, description: "Promises, async/await" },
       ]
     },
