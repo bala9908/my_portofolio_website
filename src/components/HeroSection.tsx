@@ -13,7 +13,6 @@ const HeroSection = () => {
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 rounded-full bg-primary/10 blur-3xl"></div>
-        <h1>hello</h1>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 rounded-full bg-accent/10 blur-3xl"></div>
       </div>
 
@@ -80,7 +79,7 @@ const HeroSection = () => {
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center float-animation">
                 <div className="w-72 h-72 lg:w-88 lg:h-88 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center pulse-glow">
                   <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-card flex items-center justify-center text-6xl lg:text-8xl font-bold gradient-text">
-                    JD
+                   <img src="" />       {/* image*/}
                   </div>
                 </div>
               </div>
