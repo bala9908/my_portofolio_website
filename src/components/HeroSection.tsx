@@ -23,7 +23,7 @@ const HeroSection = () => {
             <div className="animate-slide-in-up">
               <p className="text-accent font-medium mb-4 text-lg">Hello, I'm</p>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-                <span className="gradient-text">John Doe</span>
+                <span className="gradient-text">Kone Balachandra</span>
               </h1>
               <div className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-6">
                 <span className="typing-animation text-foreground">
