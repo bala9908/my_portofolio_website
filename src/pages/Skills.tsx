@@ -12,7 +12,7 @@ const Skills = () => {
         { name: "JavaScript (ES6+)", level: 80, description: "Modern JavaScript features" },
         { name: "HTML5 & CSS3", level: 90, description: "Semantic markup & responsive design" },
         { name: "Tailwind CSS", level: 85, description: "Utility-first CSS framework" },
-        { name: "Responsive Design", level: 88, description: "Mobile-first approach" },
+        { name: "Responsive Design", level: 88, description: "Mobile-first approach" }
       ]
     },
     {
@@ -53,7 +53,7 @@ const Skills = () => {
       color: "from-indigo-500 to-purple-500",
       skills: [
         { name: "Problem Solving", level: 80, description: "Logical thinking & debugging" }
-        { name: "Async Programming", level: 75, description: "Promises, async/await" },
+        { name: "Async Programming", level: 75, description: "Promises, async/await" }
       ]
     },
     {
@@ -64,7 +64,7 @@ const Skills = () => {
         { name: "Team Collaboration", level: 85, description: "Working with development teams" },
         { name: "Communication", level: 80, description: "Technical documentation" },
         { name: "Quick Learning", level: 90, description: "Adapting to new technologies" },
-        { name: "Problem Analysis", level: 82, description: "Breaking down complex problems" },
+        { name: "Problem Analysis", level: 82, description: "Breaking down complex problems" }
       ]
     }
   ];
