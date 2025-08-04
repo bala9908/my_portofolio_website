@@ -79,7 +79,11 @@ const HeroSection = () => {
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center float-animation">
                 <div className="w-72 h-72 lg:w-88 lg:h-88 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center pulse-glow">
                   <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-card flex items-center justify-center text-6xl lg:text-8xl font-bold gradient-text">
-                   <img src="/balaimage.jpg" />       {/* image*/}
+                  <img 
+                    src="/balaimage.jpg" 
+                    alt="Kone Balachandra" 
+                    className="w-full h-full object-cover rounded-full"
+                  />
                   </div>
                 </div>
               </div>
