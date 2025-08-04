@@ -52,7 +52,7 @@ const Skills = () => {
       icon: Code,
       color: "from-indigo-500 to-purple-500",
       skills: [
-        { name: "Problem Solving", level: 80, description: "Logical thinking & debugging" }
+        { name: "Problem Solving", level: 80, description: "Logical thinking & debugging" },
         { name: "Async Programming", level: 75, description: "Promises, async/await" }
       ]
     },
