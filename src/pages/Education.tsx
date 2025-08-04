@@ -5,39 +5,40 @@ const Education = () => {
   const educationData = [
     {
       degree: "Bachelor of Technology",
-      field: "Computer Science Engineering",
-      institution: "ABC University",
-      location: "City, State",
+      field: "Electronics and Communication Engineering",
+      institution: "Aditya College of Engineering",
+      location: "Surramplaem, Andhra Pradesh",
       duration: "2020 - 2024",
-      grade: "8.5 CGPA",
+      grade: "6.8 CGPA",
       achievements: [
-        "Relevant Coursework: Data Structures, Algorithms, Web Development",
-        "Final Year Project: E-commerce Web Application using MERN Stack",
+        "Relevant Coursework: Web Development",
+        "Final Year Project: Swarm Robot" ,
         "Active member of Programming Club"
       ]
     },
     {
       degree: "Higher Secondary Certificate",
-      field: "Science (PCM)",
-      institution: "XYZ School",
-      location: "City, State", 
+      field: "Mpc",
+      institution: "Aditya Juniour College",
+      location: "Mandapeta, Andhra pradesh", 
       duration: "2018 - 2020",
       grade: "85%",
       achievements: [
-        "Mathematics & Computer Science specialization",
+        "Mathematics  specialization",
         "Participated in Inter-school Programming Competition"
       ]
     },
     {
       degree: "Secondary School Certificate",
       field: "General Studies",
-      institution: "XYZ School",
-      location: "City, State",
+      institution: "Sri Gowthami Muncipal High  School",
+      location: "Mandapeta, AndraPradesh",
       duration: "2016 - 2018", 
-      grade: "88%",
+      grade: "90%",
       achievements: [
         "School topper in Mathematics",
-        "Captain of Computer Club"
+        "Captain of Computer Club",
+        "Quiz Winner"
       ]
     }
   ];
@@ -45,21 +46,9 @@ const Education = () => {
   const certifications = [
     {
       name: "Full Stack Web Development",
-      provider: "FreeCodeCamp",
+      provider: "Smart Internz",
       date: "2024",
       credentialId: "FCC001"
-    },
-    {
-      name: "React - The Complete Guide",
-      provider: "Udemy", 
-      date: "2024",
-      credentialId: "UC002"
-    },
-    {
-      name: "Node.js & Express.js Certification",
-      provider: "Coursera",
-      date: "2023",
-      credentialId: "CRS003"
     }
   ];
 
