@@ -38,10 +38,12 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-slide-in-up animate-delay-200">
+              <a href="/Balaresume-2025 jun.pdf'>
               <Button className="hero-button group">
                 <Download className="w-5 h-5 mr-2 group-hover:animate-bounce" />
                 Download Resume
               </Button>
+                </a>
               <Button 
                 variant="outline" 
                 className="border-primary text-primary hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
