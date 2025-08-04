@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 const HeroSection = () => {
   const socialLinks = [
     { icon: Github, href: 'https://github.com/bala9908', label: 'GitHub' },
-    { icon: Linkedin, href: 'linkedin.com/in/kone-balachandra-510390213', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'www.linkedin.com/in/kone-balachandra-510390213', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:chandrabala547@gmail.com', label: 'Email' },
   ];
 
