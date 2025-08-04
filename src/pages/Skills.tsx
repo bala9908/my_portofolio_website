@@ -141,7 +141,7 @@ const Skills = () => {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
               <div className="p-4 bg-primary/10 rounded-lg">
-                <div className="text-2xl font-bold text-primary">10+</div>
+                <div className="text-2xl font-bold text-primary">5+</div>
                 <div className="text-sm text-muted-foreground">Online Courses</div>
               </div>
               <div className="p-4 bg-accent/10 rounded-lg">
@@ -153,7 +153,7 @@ const Skills = () => {
                 <div className="text-sm text-muted-foreground">Coding Hours/Week</div>
               </div>
               <div className="p-4 bg-accent/10 rounded-lg">
-                <div className="text-2xl font-bold text-accent">3+</div>
+                <div className="text-2xl font-bold text-accent">1+</div>
                 <div className="text-sm text-muted-foreground">Certifications</div>
               </div>
             </div>
