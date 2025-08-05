@@ -1,12 +1,11 @@
 import { Github, Linkedin, Mail, Download, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/bala9908', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/kone-balachandra-510390213', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:chandrabala547@gmail.com', label: 'Email' },
+    { icon: Github, href: 'https://github.com', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:your.email@example.com', label: 'Email' },
   ];
 
   return (
@@ -24,7 +23,7 @@ const HeroSection = () => {
             <div className="animate-slide-in-up">
               <p className="text-accent font-medium mb-4 text-lg">Hello, I'm</p>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-                <span className="gradient-text">Kone Balachandra</span>
+                <span className="gradient-text">John Doe</span>
               </h1>
               <div className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-6">
                 <span className="typing-animation text-foreground">
@@ -39,22 +38,17 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-slide-in-up animate-delay-200">
-              <a href="/Balaresume-2025 jun.pdf" download >
               <Button className="hero-button group">
                 <Download className="w-5 h-5 mr-2 group-hover:animate-bounce" />
                 Download Resume
               </Button>
-                </a>
-              <Link to="/skills" >
               <Button 
                 variant="outline" 
                 className="border-primary text-primary hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
-                 
               >
                 <ExternalLink className="w-5 h-5 mr-2" />
                 View Projects
               </Button>
-                </Link>
             </div>
 
             {/* Social Links */}
@@ -83,11 +77,7 @@ const HeroSection = () => {
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center float-animation">
                 <div className="w-72 h-72 lg:w-88 lg:h-88 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center pulse-glow">
                   <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-card flex items-center justify-center text-6xl lg:text-8xl font-bold gradient-text">
-                  <img 
-                    src="/balaimage.jpg" 
-                    alt="Kone Balachandra" 
-                    className="w-full h-full object-cover rounded-full"
-                  />
+                    JD
                   </div>
                 </div>
               </div>
