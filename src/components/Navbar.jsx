@@ -13,7 +13,7 @@ const Navbar = () => {
     { name: 'Projects', path: '/projects', icon: FolderOpen },
   ];
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path) => location.pathname === path;
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-lg border-b border-border">
