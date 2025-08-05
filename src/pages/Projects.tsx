@@ -59,7 +59,7 @@ const Projects = () => {
       image: "Screenshot 2025-08-05 121311.png",
       technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Markdown"],
       features: [
-        "Vendors can add product details such as name, price, description, image, and category."
+        "Vendors can add product details such as name, price, description, image, and category.",
         "Display a list of all products added by the vendor with key details like name, price, and status.",
         "Easily update product information if needed.",
         "Remove products that are no longer available."
