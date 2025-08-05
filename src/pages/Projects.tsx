@@ -8,7 +8,7 @@ const Projects = () => {
       title: "E-Commerce Web Application",
       description: "A full-featured online shopping platform built with MERN stack featuring user authentication, product catalog, shopping cart, and secure payment integration.",
       image: "/api/placeholder/400/250",
-      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Stripe"],
+      technologies: ["React.js"],
       features: [
         "User registration and authentication",
         "Product browsing and search functionality", 
@@ -18,10 +18,10 @@ const Projects = () => {
         "Admin dashboard for inventory management"
       ],
       liveUrl: "https://example-ecommerce.com",
-      githubUrl: "https://github.com/yourusername/ecommerce-app",
+      githubUrl: "https://github.com/bala9908/E-commerce",
       status: "Completed",
       duration: "3 months",
-      category: "Full Stack"
+      category: "Front end"
     },
     {
       title: "Task Management Dashboard",
@@ -234,7 +234,7 @@ const Projects = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-3 pt-2">
-                  <Button 
+{/*                   <Button 
                     size="sm" 
                     className="flex-1 hero-button"
                     asChild
@@ -243,11 +243,11 @@ const Projects = () => {
                       <Eye className="w-4 h-4 mr-2" />
                       Live Demo
                     </a>
-                  </Button>
+                  </Button> */}
                   <Button 
                     size="sm" 
                     variant="outline"
-                    className="flex-1 border-primary text-primary hover:bg-primary/10"
+                    className="flex-1 border-primary text-primary hover:bg-primary/10 w-100"
                     asChild
                   >
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
