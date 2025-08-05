@@ -24,6 +24,7 @@ const Projects = () => {
       title: "Calculator",
       description: "A collaborative task management application with real-time updates, team collaboration features, and progress tracking.",
       image: "/Screenshot 2025-08-05 093842.png",
+      technologies: ["React.js", "CSS3"],
       features: [
         "It perform Simple Calculation",
         "It reacts based on screen size"

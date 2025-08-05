@@ -1,10 +1,8 @@
 import { Github, Linkedin, Mail, Download, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import Skills from "./pages/Skills";
-import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+
 const HeroSection = () => {
-  let naviagate=useNavigate()
   const socialLinks = [
     { icon: Github, href: 'https://github.com/bala9908', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/kone-balachandra-510390213', label: 'LinkedIn' },
