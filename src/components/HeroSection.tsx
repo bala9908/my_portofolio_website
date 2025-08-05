@@ -45,7 +45,7 @@ const HeroSection = () => {
                 Download Resume
               </Button>
                 </a>
-              <Link to="/skills" >
+              <Link to="/projects" >
               <Button 
                 variant="outline" 
                 className="border-primary text-primary hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
