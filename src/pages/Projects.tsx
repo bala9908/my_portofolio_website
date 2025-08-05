@@ -7,15 +7,12 @@ const Projects = () => {
     {
       title: "E-Commerce Web Application",
       description: "A full-featured online shopping platform built with MERN stack featuring user authentication, product catalog, shopping cart, and secure payment integration.",
-      image: "/api/placeholder/400/250",
+      image: "/Screenshot 2025-08-04 223349.png",
       technologies: ["React.js"],
       features: [
-        "User registration and authentication",
         "Product browsing and search functionality", 
         "Shopping cart and wishlist",
-        "Secure payment processing",
-        "Order tracking and history",
-        "Admin dashboard for inventory management"
+        'Search products based on category'
       ],
       liveUrl: "https://example-ecommerce.com",
       githubUrl: "https://github.com/bala9908/E-commerce",
@@ -169,9 +166,7 @@ const Projects = () => {
               {/* Project Image */}
               <div className="relative overflow-hidden rounded-lg mb-6 bg-gradient-to-br from-primary/10 to-accent/10">
                 <div className="aspect-video flex items-center justify-center">
-                  <div className="text-6xl font-bold gradient-text opacity-50">
-                    {project.title.charAt(0)}
-                  </div>
+                <img src={project.image} alt={project.title} className="w-full h-full object-cover rounded-lg" />
                 </div>
                 <div className="absolute top-4 right-4 flex gap-2">
                   <span className={`px-3 py-1 rounded-full text-xs font-medium border ${getStatusColor(project.status)}`}>
