@@ -1,5 +1,5 @@
 import { Code, Database, Globe, Settings, Wrench, Lightbulb } from 'lucide-react';
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/Navbar.jsx';
 
 const Skills = () => {
   const skillCategories = [
