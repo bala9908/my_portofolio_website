@@ -1,5 +1,5 @@
 import { Code, Database, Globe, Settings, Wrench, Lightbulb } from 'lucide-react';
-import Navbar from '@/components/Navbar.jsx';
+import Navbar from '@/components/Navbar';
 
 const Skills = () => {
   const skillCategories = [
@@ -12,7 +12,7 @@ const Skills = () => {
         { name: "JavaScript (ES6+)", level: 80, description: "Modern JavaScript features" },
         { name: "HTML5 & CSS3", level: 90, description: "Semantic markup & responsive design" },
         { name: "Tailwind CSS", level: 85, description: "Utility-first CSS framework" },
-        { name: "Responsive Design", level: 88, description: "Mobile-first approach" }
+        { name: "Responsive Design", level: 88, description: "Mobile-first approach" },
       ]
     },
     {
@@ -20,10 +20,11 @@ const Skills = () => {
       icon: Settings,
       color: "from-green-500 to-emerald-500",
       skills: [
-        { name: "Node.js", level: 65, description: "Server-side JavaScript runtime" },
-        { name: "Express.js", level: 60, description: "Web application framework" },
-        { name: "RESTful APIs", level: 70, description: "API design & development" },
-        { name: "Authentication", level: 60, description: "JWT & session management" }
+        { name: "Node.js", level: 75, description: "Server-side JavaScript runtime" },
+        { name: "Express.js", level: 80, description: "Web application framework" },
+        { name: "RESTful APIs", level: 78, description: "API design & development" },
+        { name: "Authentication", level: 70, description: "JWT & session management" },
+        { name: "Middleware", level: 75, description: "Custom middleware development" },
       ]
     },
     {
@@ -33,7 +34,8 @@ const Skills = () => {
       skills: [
         { name: "MongoDB", level: 80, description: "NoSQL document database" },
         { name: "Mongoose", level: 78, description: "MongoDB object modeling" },
-        { name: "SQL Basics", level: 65, description: "Relational database concepts" }
+        { name: "SQL Basics", level: 65, description: "Relational database concepts" },
+        { name: "Database Design", level: 70, description: "Schema design & optimization" },
       ]
     },
     {
@@ -44,7 +46,8 @@ const Skills = () => {
         { name: "Git & GitHub", level: 85, description: "Version control & collaboration" },
         { name: "VS Code", level: 90, description: "IDE configuration & extensions" },
         { name: "Postman", level: 80, description: "API testing & documentation" },
-        { name: "NPM/Yarn", level: 82, description: "Package management" }
+        { name: "NPM/Yarn", level: 82, description: "Package management" },
+        { name: "Chrome DevTools", level: 75, description: "Debugging & performance" },
       ]
     },
     {
@@ -52,8 +55,10 @@ const Skills = () => {
       icon: Code,
       color: "from-indigo-500 to-purple-500",
       skills: [
+        { name: "Data Structures", level: 75, description: "Arrays, objects, algorithms" },
         { name: "Problem Solving", level: 80, description: "Logical thinking & debugging" },
-        { name: "Async Programming", level: 75, description: "Promises, async/await" }
+        { name: "OOP Concepts", level: 70, description: "Object-oriented programming" },
+        { name: "Async Programming", level: 75, description: "Promises, async/await" },
       ]
     },
     {
@@ -64,12 +69,12 @@ const Skills = () => {
         { name: "Team Collaboration", level: 85, description: "Working with development teams" },
         { name: "Communication", level: 80, description: "Technical documentation" },
         { name: "Quick Learning", level: 90, description: "Adapting to new technologies" },
-        { name: "Problem Analysis", level: 82, description: "Breaking down complex problems" }
+        { name: "Problem Analysis", level: 82, description: "Breaking down complex problems" },
       ]
     }
   ];
 
-  const SkillBar = ({ skill }) => (
+  const SkillBar = ({ skill }: { skill: { name: string; level: number; description: string } }) => (
     <div className="mb-6 last:mb-0">
       <div className="flex justify-between items-center mb-2">
         <h4 className="font-semibold text-foreground">{skill.name}</h4>
@@ -141,7 +146,7 @@ const Skills = () => {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
               <div className="p-4 bg-primary/10 rounded-lg">
-                <div className="text-2xl font-bold text-primary">5+</div>
+                <div className="text-2xl font-bold text-primary">10+</div>
                 <div className="text-sm text-muted-foreground">Online Courses</div>
               </div>
               <div className="p-4 bg-accent/10 rounded-lg">
@@ -153,7 +158,7 @@ const Skills = () => {
                 <div className="text-sm text-muted-foreground">Coding Hours/Week</div>
               </div>
               <div className="p-4 bg-accent/10 rounded-lg">
-                <div className="text-2xl font-bold text-accent">1+</div>
+                <div className="text-2xl font-bold text-accent">3+</div>
                 <div className="text-sm text-muted-foreground">Certifications</div>
               </div>
             </div>
