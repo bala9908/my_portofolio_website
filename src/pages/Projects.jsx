@@ -1,6 +1,6 @@
 import { ExternalLink, Github, Eye, Calendar, Code, Database } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import Navbar from '@/components/Navbar.jsx';
+import Navbar from '@/components/Navbar';
 
 const Projects = () => {
   const projects = [
