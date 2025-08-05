@@ -1,5 +1,5 @@
 import { GraduationCap, Calendar, MapPin, Award } from 'lucide-react';
-import Navbar from '@/components/Navbar.jsx';
+import Navbar from '@/components/Navbar';
 
 const Education = () => {
   const educationData = [

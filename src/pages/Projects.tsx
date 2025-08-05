@@ -1,6 +1,6 @@
 import { ExternalLink, Github, Eye, Calendar, Code, Database } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import Navbar from '@/components/Navbar.jsx';
+import Navbar from '@/components/Navbar';
 
 const Projects = () => {
   const projects = [
@@ -108,7 +108,7 @@ const Projects = () => {
     // }
   ];
 
-  const getStatusColor = (status) => {
+  const getStatusColor = (status: string) => {
     switch (status) {
       case 'Completed':
         return 'bg-green-500/20 text-green-400 border-green-500/30';
@@ -119,7 +119,7 @@ const Projects = () => {
     }
   };
 
-  const getCategoryIcon = (category) => {
+  const getCategoryIcon = (category: string) => {
     switch (category) {
       case 'Full Stack':
         return <Database className="w-4 h-4" />;

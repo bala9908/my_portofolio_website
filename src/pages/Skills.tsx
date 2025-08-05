@@ -1,5 +1,5 @@
 import { Code, Database, Globe, Settings, Wrench, Lightbulb } from 'lucide-react';
-import Navbar from '@/components/Navbar.jsx';
+import Navbar from '@/components/Navbar';
 
 const Skills = () => {
   const skillCategories = [
@@ -69,7 +69,7 @@ const Skills = () => {
     }
   ];
 
-  const SkillBar = ({ skill }) => (
+  const SkillBar = ({ skill }: { skill: { name: string; level: number; description: string } }) => (
     <div className="mb-6 last:mb-0">
       <div className="flex justify-between items-center mb-2">
         <h4 className="font-semibold text-foreground">{skill.name}</h4>
