@@ -1,40 +1,33 @@
 import { ExternalLink, Github, Eye, Calendar, Code, Database } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/Navbar.jsx';
 
 const Projects = () => {
   const projects = [
     {
       title: "E-Commerce Web Application",
       description: "A full-featured online shopping platform built with MERN stack featuring user authentication, product catalog, shopping cart, and secure payment integration.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Stripe"],
+      image: "/Screenshot 2025-08-04 223349.png",
+      technologies: ["React.js"],
       features: [
-        "User registration and authentication",
         "Product browsing and search functionality", 
         "Shopping cart and wishlist",
-        "Secure payment processing",
-        "Order tracking and history",
-        "Admin dashboard for inventory management"
+        'Search products based on category'
       ],
       liveUrl: "https://example-ecommerce.com",
-      githubUrl: "https://github.com/yourusername/ecommerce-app",
+      githubUrl: "https://github.com/bala9908/E-commerce",
       status: "Completed",
-      duration: "3 months",
-      category: "Full Stack"
+      duration: "1 months",
+      category: "Front end"
     },
     {
-      title: "Task Management Dashboard",
+      title: "Calculator",
       description: "A collaborative task management application with real-time updates, team collaboration features, and progress tracking.",
-      image: "/api/placeholder/400/250", 
-      technologies: ["React.js", "Node.js", "Socket.io", "MongoDB", "Material-UI"],
+      image: "/Screenshot 2025-08-05 093842.png",
+      technologies: ["React.js", "CSS3"],
       features: [
-        "Real-time task updates",
-        "Team collaboration and assignment",
-        "Progress tracking with charts",
-        "File attachments and comments",
-        "Deadline notifications",
-        "Mobile responsive design"
+        "It perform Simple Calculation",
+        "It reacts based on screen size"
       ],
       liveUrl: "https://example-taskmanager.com",
       githubUrl: "https://github.com/yourusername/task-manager",
@@ -45,7 +38,7 @@ const Projects = () => {
     {
       title: "Weather Forecast App",
       description: "A responsive weather application that provides current weather conditions and 7-day forecasts with location-based services.",
-      image: "/api/placeholder/400/250",
+      image: "/Screenshot 2025-08-05 105515.png",
       technologies: ["React.js", "OpenWeather API", "CSS3", "Geolocation API"],
       features: [
         "Current weather conditions",
@@ -62,65 +55,60 @@ const Projects = () => {
       category: "Frontend"
     },
     {
-      title: "Personal Blog Platform",
-      description: "A modern blogging platform with markdown support, comment system, and admin panel for content management.",
-      image: "/api/placeholder/400/250",
+      title: "Vendor Dash Board",
+      description: "A vendor dashboard is a simplified interface that allows vendors to add new products, view existing products, and see the list of associated restaurants.",
+      image: "Screenshot 2025-08-05 121311.png",
       technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Markdown"],
       features: [
-        "Markdown blog post creation",
-        "Comment system with moderation",
-        "Admin panel for content management",
-        "Category and tag organization",
-        "SEO optimization",
-        "Social media sharing"
+        "Vendors can add product details such as name, price, description, image, and category.",
+        "Display a list of all products added by the vendor with key details like name, price, and status.",
+        "Easily update product information if needed.",
+        "Remove products that are no longer available."
       ],
       liveUrl: "https://example-blog.com",
-      githubUrl: "https://github.com/yourusername/blog-platform", 
-      status: "In Progress",
+      githubUrl: "https://github.com/bala9908/seller-dashboard", 
+      status: "Completed",
       duration: "1.5 months",
       category: "Full Stack"
     },
     {
-      title: "Recipe Finder Application", 
-      description: "A recipe discovery app that helps users find recipes based on available ingredients with nutritional information.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React.js", "Recipe API", "Bootstrap", "Local Storage"],
+      title: "Personal portfolio", 
+      description: "A passionate full-stack developer showcasing modern web projects and creative digital solutions.",
+      image: "/Screenshot 2025-08-05 122243.png",
+      technologies: ["React.js","Tailwind css"],
       features: [
-        "Recipe search by ingredients",
-        "Nutritional information display",
-        "Save favorite recipes",
-        "Shopping list generation",
-        "Recipe difficulty rating",
-        "Dietary restriction filters"
+       "Building responsive, user-focused web applications with a full-stack mindset.",
+        "Showcasing my journey as a developer through clean code and real-world projects.",
+        "A self-taught developer crafting functional and elegant web experiences."
       ],
       liveUrl: "https://example-recipes.com",
-      githubUrl: "https://github.com/yourusername/recipe-finder",
+      githubUrl: "https://github.com/bala9908/dynamic-debut-site",
       status: "Completed", 
       duration: "3 weeks",
       category: "Frontend"
-    },
-    {
-      title: "Student Grade Management System",
-      description: "A comprehensive system for managing student grades, attendance, and academic performance with role-based access.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Chart.js"], 
-      features: [
-        "Student and teacher dashboards",
-        "Grade tracking and analytics",
-        "Attendance management",
-        "Report generation",
-        "Parent portal access",
-        "Performance visualization"
-      ],
-      liveUrl: "https://example-grades.com",
-      githubUrl: "https://github.com/yourusername/grade-management",
-      status: "Completed",
-      duration: "2.5 months", 
-      category: "Full Stack"
     }
+    // {
+    //   title: "Student Grade Management System",
+    //   description: "A comprehensive system for managing student grades, attendance, and academic performance with role-based access.",
+    //   image: "/api/placeholder/400/250",
+    //   technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Chart.js"], 
+    //   features: [
+    //     "Student and teacher dashboards",
+    //     "Grade tracking and analytics",
+    //     "Attendance management",
+    //     "Report generation",
+    //     "Parent portal access",
+    //     "Performance visualization"
+    //   ],
+    //   liveUrl: "https://example-grades.com",
+    //   githubUrl: "https://github.com/yourusername/grade-management",
+    //   status: "Completed",
+    //   duration: "2.5 months", 
+    //   category: "Full Stack"
+    // }
   ];
 
-  const getStatusColor = (status: string) => {
+  const getStatusColor = (status) => {
     switch (status) {
       case 'Completed':
         return 'bg-green-500/20 text-green-400 border-green-500/30';
@@ -131,7 +119,7 @@ const Projects = () => {
     }
   };
 
-  const getCategoryIcon = (category: string) => {
+  const getCategoryIcon = (category) => {
     switch (category) {
       case 'Full Stack':
         return <Database className="w-4 h-4" />;
@@ -169,9 +157,7 @@ const Projects = () => {
               {/* Project Image */}
               <div className="relative overflow-hidden rounded-lg mb-6 bg-gradient-to-br from-primary/10 to-accent/10">
                 <div className="aspect-video flex items-center justify-center">
-                  <div className="text-6xl font-bold gradient-text opacity-50">
-                    {project.title.charAt(0)}
-                  </div>
+                <img src={project.image} alt={project.title} className="w-full h-full object-cover rounded-lg" />
                 </div>
                 <div className="absolute top-4 right-4 flex gap-2">
                   <span className={`px-3 py-1 rounded-full text-xs font-medium border ${getStatusColor(project.status)}`}>
@@ -234,7 +220,7 @@ const Projects = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-3 pt-2">
-                  <Button 
+{/*                   <Button 
                     size="sm" 
                     className="flex-1 hero-button"
                     asChild
@@ -243,11 +229,11 @@ const Projects = () => {
                       <Eye className="w-4 h-4 mr-2" />
                       Live Demo
                     </a>
-                  </Button>
+                  </Button> */}
                   <Button 
                     size="sm" 
                     variant="outline"
-                    className="flex-1 border-primary text-primary hover:bg-primary/10"
+                    className="flex-1 border-primary text-primary hover:bg-primary/10 w-100"
                     asChild
                   >
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
@@ -270,7 +256,7 @@ const Projects = () => {
               Check back regularly or follow my GitHub for the latest updates.
             </p>
             <Button className="hero-button" asChild>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/bala9908" target="_blank" rel="noopener noreferrer">
                 <Github className="w-5 h-5 mr-2" />
                 View All Repositories
               </a>
