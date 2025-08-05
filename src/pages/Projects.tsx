@@ -81,7 +81,7 @@ const Projects = () => {
         "A self-taught developer crafting functional and elegant web experiences."
       ],
       liveUrl: "https://example-recipes.com",
-      githubUrl: "https://github.com/bala9908/dynamic-debut-site,
+      githubUrl: "https://github.com/bala9908/dynamic-debut-site",
       status: "Completed", 
       duration: "3 weeks",
       category: "Frontend"
