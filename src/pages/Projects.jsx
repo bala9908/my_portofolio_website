@@ -108,7 +108,7 @@ const Projects = () => {
     // }
   ];
 
-  const getStatusColor = (status: string) => {
+  const getStatusColor = (status) => {
     switch (status) {
       case 'Completed':
         return 'bg-green-500/20 text-green-400 border-green-500/30';
@@ -119,7 +119,7 @@ const Projects = () => {
     }
   };
 
-  const getCategoryIcon = (category: string) => {
+  const getCategoryIcon = (category) => {
     switch (category) {
       case 'Full Stack':
         return <Database className="w-4 h-4" />;

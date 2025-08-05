@@ -69,7 +69,7 @@ const Skills = () => {
     }
   ];
 
-  const SkillBar = ({ skill }: { skill: { name: string; level: number; description: string } }) => (
+  const SkillBar = ({ skill }) => (
     <div className="mb-6 last:mb-0">
       <div className="flex justify-between items-center mb-2">
         <h4 className="font-semibold text-foreground">{skill.name}</h4>
