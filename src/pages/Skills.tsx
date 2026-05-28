@@ -1,94 +1,48 @@
-import { Code, Database, Globe, Settings, Wrench, Lightbulb } from 'lucide-react';
+import { Code, Library, Wrench, Terminal, Globe, Server, Database } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 
 const Skills = () => {
-  const skillCategories = [
+  const skillSections = [
     {
-      title: "Frontend Development",
-      icon: Globe,
+      title: "Programming Languages",
+      icon: Terminal,
       color: "from-blue-500 to-cyan-500",
       skills: [
-        { name: "React.js", level: 85, description: "Component-based UI development" },
-        { name: "JavaScript (ES6+)", level: 80, description: "Modern JavaScript features" },
-        { name: "HTML5 & CSS3", level: 90, description: "Semantic markup & responsive design" },
-        { name: "Tailwind CSS", level: 85, description: "Utility-first CSS framework" },
-        { name: "Responsive Design", level: 88, description: "Mobile-first approach" }
+        { name: "JavaScript", description: "Modern ES6+ features & DOM manipulation" },
+        { name: "HTML", description: "Semantic markup & accessibility" },
+        { name: "CSS", description: "Responsive design & animations" },
+        { name: "Python", description: "Scripting & backend development" },
+        { name: "SQL", description: "Database queries & management" }
       ]
     },
     {
-      title: "Backend Development", 
-      icon: Settings,
-      color: "from-green-500 to-emerald-500",
-      skills: [
-        { name: "Node.js", level: 65, description: "Server-side JavaScript runtime" },
-        { name: "Express.js", level: 60, description: "Web application framework" },
-        { name: "RESTful APIs", level: 70, description: "API design & development" },
-        { name: "Authentication", level: 60, description: "JWT & session management" }
-      ]
-    },
-    {
-      title: "Database & Storage",
-      icon: Database, 
+      title: "Frameworks",
+      icon: Library,
       color: "from-purple-500 to-pink-500",
       skills: [
-        { name: "MongoDB", level: 80, description: "NoSQL document database" },
-        { name: "Mongoose", level: 78, description: "MongoDB object modeling" },
-        { name: "SQL Basics", level: 65, description: "Relational database concepts" }
+        { name: "React.js", description: "Component-based UI development" },
+        { name: "Bootstrap", description: "Rapid responsive UI building" },
+        { name: "Express.js", description: "RESTful API & server framework" },
+        { name: "Node.js", description: "Server-side JavaScript runtime" }
       ]
     },
     {
-      title: "Development Tools",
+      title: "Tools",
       icon: Wrench,
-      color: "from-orange-500 to-red-500", 
+      color: "from-orange-500 to-red-500",
       skills: [
-        { name: "Git & GitHub", level: 85, description: "Version control & collaboration" },
-        { name: "VS Code", level: 90, description: "IDE configuration & extensions" },
-        { name: "Postman", level: 80, description: "API testing & documentation" },
-        { name: "NPM/Yarn", level: 82, description: "Package management" }
-      ]
-    },
-    {
-      title: "Programming Concepts",
-      icon: Code,
-      color: "from-indigo-500 to-purple-500",
-      skills: [
-        { name: "Problem Solving", level: 80, description: "Logical thinking & debugging" },
-        { name: "Async Programming", level: 75, description: "Promises, async/await" }
-      ]
-    },
-    {
-      title: "Soft Skills",
-      icon: Lightbulb,
-      color: "from-teal-500 to-blue-500",
-      skills: [
-        { name: "Team Collaboration", level: 85, description: "Working with development teams" },
-        { name: "Communication", level: 80, description: "Technical documentation" },
-        { name: "Quick Learning", level: 90, description: "Adapting to new technologies" },
-        { name: "Problem Analysis", level: 82, description: "Breaking down complex problems" }
+        { name: "Git & GitHub", description: "Version control & collaboration" },
+        { name: "VS Code", description: "IDE configuration & extensions" },
+        { name: "Postman", description: "API testing & documentation" },
+        { name: "NPM", description: "Package management" }
       ]
     }
   ];
 
-  const SkillBar = ({ skill }: { skill: { name: string; level: number; description: string } }) => (
-    <div className="mb-6 last:mb-0">
-      <div className="flex justify-between items-center mb-2">
-        <h4 className="font-semibold text-foreground">{skill.name}</h4>
-        <span className="text-primary font-bold">{skill.level}%</span>
-      </div>
-      <p className="text-sm text-muted-foreground mb-3">{skill.description}</p>
-      <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
-        <div 
-          className="h-full bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-1000 ease-out hover:scale-105"
-          style={{ width: `${skill.level}%` }}
-        ></div>
-      </div>
-    </div>
-  );
-
   return (
     <div className="min-h-screen">
       <Navbar />
-      
+
       <div className="pt-24 pb-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16 animate-slide-in-up">
@@ -96,33 +50,52 @@ const Skills = () => {
             <span className="gradient-text">Technical Skills</span>
           </h1>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-            A comprehensive overview of my technical competencies in MERN stack development and related technologies.
+            A comprehensive overview of my technical competencies in web development
+            and related technologies.
           </p>
         </div>
 
-        {/* Skills Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {skillCategories.map((category, categoryIndex) => {
-            const IconComponent = category.icon;
+        {/* Skills Sections */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {skillSections.map((section, sectionIndex) => {
+            const IconComponent = section.icon;
             return (
-              <div 
-                key={categoryIndex}
-                className={`glow-card animate-slide-in-up`}
-                style={{ animationDelay: `${categoryIndex * 0.1}s` }}
+              <div
+                key={sectionIndex}
+                className="glow-card animate-slide-in-up"
+                style={{ animationDelay: `${sectionIndex * 0.15}s` }}
               >
-                <div className="mb-6">
-                  <div className="flex items-center mb-4">
-                    <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${category.color} flex items-center justify-center mr-4`}>
-                      <IconComponent className="w-6 h-6 text-white" />
-                    </div>
-                    <h2 className="text-xl font-bold text-foreground">{category.title}</h2>
+                {/* Section Header */}
+                <div className="flex items-center mb-6 pb-4 border-b border-border/50">
+                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${section.color} flex items-center justify-center mr-4 shadow-lg`}>
+                    <IconComponent className="w-6 h-6 text-white" />
                   </div>
+                  <h2 className="text-xl font-bold text-foreground">{section.title}</h2>
                 </div>
-                
-                <div className="space-y-1">
-                  {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex} className="animate-slide-in-left" style={{ animationDelay: `${(categoryIndex * 0.1) + (skillIndex * 0.05)}s` }}>
-                      <SkillBar skill={skill} />
+
+                {/* Skill Tags */}
+                <div className="flex flex-wrap gap-3">
+                  {section.skills.map((skill, skillIndex) => (
+                    <div
+                      key={skillIndex}
+                      className="group relative"
+                    >
+                      <span
+                        className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium
+                        bg-muted text-foreground border border-border/50
+                        hover:border-primary/50 hover:text-primary hover:bg-primary/10
+                        transition-all duration-300 cursor-default"
+                      >
+                        {skill.name}
+                      </span>
+                      {/* Tooltip */}
+                      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 rounded-lg
+                        bg-card border border-border text-xs text-muted-foreground whitespace-nowrap
+                        opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                        transition-all duration-200 z-10 shadow-lg">
+                        {skill.description}
+                        <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-card" />
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -131,28 +104,28 @@ const Skills = () => {
           })}
         </div>
 
-        {/* Learning Journey */}
+        {/* Quick Stats */}
         <div className="mt-16 text-center animate-slide-in-up animate-delay-400">
           <div className="glow-card max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold mb-4 gradient-text">Continuous Learning Journey</h2>
             <p className="text-muted-foreground mb-6">
-              As a fresher, I'm committed to continuous improvement and staying updated with the latest technologies. 
-              Currently focusing on advanced React patterns, TypeScript, and exploring cloud technologies like AWS.
+              Committed to continuous improvement and staying updated with the latest technologies.
+              Currently focusing on advanced React patterns and cloud technologies.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-              <div className="p-4 bg-primary/10 rounded-lg">
+              <div className="p-4 bg-primary/10 rounded-lg hover:bg-primary/15 transition-colors">
                 <div className="text-2xl font-bold text-primary">5+</div>
                 <div className="text-sm text-muted-foreground">Online Courses</div>
               </div>
-              <div className="p-4 bg-accent/10 rounded-lg">
+              <div className="p-4 bg-accent/10 rounded-lg hover:bg-accent/15 transition-colors">
                 <div className="text-2xl font-bold text-accent">5+</div>
                 <div className="text-sm text-muted-foreground">Personal Projects</div>
               </div>
-              <div className="p-4 bg-primary/10 rounded-lg">
+              <div className="p-4 bg-primary/10 rounded-lg hover:bg-primary/15 transition-colors">
                 <div className="text-2xl font-bold text-primary">50+</div>
                 <div className="text-sm text-muted-foreground">Coding Hours/Week</div>
               </div>
-              <div className="p-4 bg-accent/10 rounded-lg">
+              <div className="p-4 bg-accent/10 rounded-lg hover:bg-accent/15 transition-colors">
                 <div className="text-2xl font-bold text-accent">1+</div>
                 <div className="text-sm text-muted-foreground">Certifications</div>
               </div>
