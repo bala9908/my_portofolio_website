@@ -38,7 +38,7 @@ const Education = () => {
     //   achievements: [
     //     "School topper in Mathematics",
     //     "Captain of Computer Club",
-    //     "Quiz Winner"
+    //     "Quiz Winner "
     //   ]
     // }
   ];
