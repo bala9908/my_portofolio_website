@@ -9,7 +9,7 @@ const Education = () => {
       institution: "Aditya College of Engineering",
       location: "Surramplaem, Andhra Pradesh",
       duration: "2020 - 2024",
-      grade: "6.8 CGPA",
+      grade: "6.51 CGPA",
       achievements: [
         "Relevant Coursework: Web Development",
         "Final Year Project: Swarm Robot" ,
@@ -17,30 +17,30 @@ const Education = () => {
       ]
     },
     {
-      degree: "Higher Secondary Certificate",
+      degree: "Intermediate",
       field: "Mpc",
       institution: "Aditya Juniour College",
       location: "Mandapeta, Andhra pradesh", 
       duration: "2018 - 2020",
-      grade: "85%",
+      grade: "88%",
       achievements: [
         "Mathematics  specialization",
         "Participated in Inter-school Programming Competition"
       ]
     },
-    {
-      degree: "Secondary School Certificate",
-      field: "General Studies",
-      institution: "Sri Gowthami Muncipal High  School",
-      location: "Mandapeta, AndraPradesh",
-      duration: "2016 - 2018", 
-      grade: "90%",
-      achievements: [
-        "School topper in Mathematics",
-        "Captain of Computer Club",
-        "Quiz Winner"
-      ]
-    }
+    // {
+    //   degree: "Secondary School Certificate",
+    //   field: "General Studies",
+    //   institution: "Sri Gowthami Muncipal High  School",
+    //   location: "Mandapeta, AndraPradesh",
+    //   duration: "2016 - 2018", 
+    //   grade: "90%",
+    //   achievements: [
+    //     "School topper in Mathematics",
+    //     "Captain of Computer Club",
+    //     "Quiz Winner"
+    //   ]
+    // }
   ];
 
   const certifications = [
